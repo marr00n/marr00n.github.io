@@ -46,6 +46,7 @@ body {
 
 #discardPile {
     margin-top: 20px;
+    margin-bottom: 50px;
     text-align: left; /* Align discard pile text to the left */
 }
 
