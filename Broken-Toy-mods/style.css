@@ -34,6 +34,10 @@ h2 {
     margin-bottom:0px;
 }
 
+.pending {
+    margin-bottom: 7px;
+}
+
 p {
     padding-left:20px;
     padding-right:20px;
