@@ -33,7 +33,7 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.1); /* Slightly enlarge card on hover */
+    transform: scale(1.05); /* Slightly enlarge card on hover */
 }
 
 .timer {
