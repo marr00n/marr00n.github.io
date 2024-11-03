@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: lightblue;
     text-align: center;
 }
 
@@ -42,6 +42,7 @@ body {
     margin-bottom: 20px; /* Space between timer and bottom */
     font-size: 14px;
     color: #333;
+    margin-top: -20px
 }
 
 #discardPile {
