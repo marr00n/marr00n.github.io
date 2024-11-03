@@ -31,6 +31,8 @@ h2 {
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom:0px;
 }
 
@@ -85,6 +87,7 @@ body {
 
 .timer {
     margin: 10px; /* Reduced space between timer and bottom */
+    margin-top:5px;
     font-size: 14px;
     color: #333;
 }
