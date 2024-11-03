@@ -1,3 +1,5 @@
+//JMO-ward-calls.js
+
 export const actions = [
     { ward: "Ward One", task: "A new patient needs their routine drugs prescribed. They’ve got Parkinson’s Disease." },
     { ward: "Ward One", task: "A patient has fallen out of bed and hurt their shoulder. They need analgesia and a review." },
