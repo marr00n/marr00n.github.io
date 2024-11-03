@@ -10,7 +10,7 @@ function startGame() {
     drawnCards = [];
     discardPile = [];
     document.getElementById('cardsContainer').innerHTML = '<h2>Pending tasks</h2><h4>Oldest to newest</h4>';
-    document.getElementById('discardPile').innerHTML = '<h2>++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br/><br/>Completed Tasks</h2>';
+    document.getElementById('discardPile').innerHTML = '<br/><hr></br><h2>Completed Tasks</h2>';
     drawCards(5);
 }
 
