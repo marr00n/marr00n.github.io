@@ -4,20 +4,45 @@ let drawnCards = [];
 let timers = [];
 let discardPile = [];
 
-document.getElementById('startButton').addEventListener('click', startGame);
+const startButton = document.getElementById('startButton');
+const resetButton = document.getElementById('resetButton');
+const instructions = document.getElementById('instructions');
+
+startButton.addEventListener('click', startGame);
+resetButton.addEventListener('click', resetGame);
 
 function startGame() {
+    // Reset game state
     drawnCards = [];
     discardPile = [];
     document.getElementById('cardsContainer').innerHTML = '<h2>Pending tasks</h2><b>Oldest to newest</b>';
     document.getElementById('discardPile').innerHTML = '<br/><hr></br><h2>Completed Tasks</h2>';
+
+    // Hide instructions and "Start Exercise" button, show "Reset" button
+    instructions.style.display = 'none';
+    startButton.style.display = 'none';
+    resetButton.style.display = 'inline-block';
+
+    // Draw initial cards
     drawCards(5);
 }
 
-document.getElementById("startButton").addEventListener("click", function() {
-    const instructions = document.getElementById("instructions");
-    instructions.style.display = "none"; // Hide the instructions
-});
+function resetGame() {
+    // Show instructions and "Start Exercise" button, hide "Reset" button
+    instructions.style.display = 'block';
+    startButton.style.display = 'inline-block';
+    resetButton.style.display = 'none';
+
+    // Clear drawn cards, discard pile, and timers
+    drawnCards = [];
+    timers.forEach(timerId => clearInterval(timerId)); // Stop all timers
+    timers = [];
+    discardPile = [];
+
+    // Clear displayed cards and discard pile content
+    document.getElementById('cardsContainer').innerHTML = '';
+    document.getElementById('discardPile').innerHTML = '';
+}
 
 function drawCards(num) {
     for (let i = 0; i < num; i++) {
