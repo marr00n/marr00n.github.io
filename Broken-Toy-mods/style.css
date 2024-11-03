@@ -46,3 +46,24 @@ body {
     margin-top: 20px;
     text-align: left; /* Align discard pile text to the left */
 }
+
+#startButton {
+    display: inline-block; /* Allows padding and margin to work properly */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Font size */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+#startButton:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+#startButton:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
