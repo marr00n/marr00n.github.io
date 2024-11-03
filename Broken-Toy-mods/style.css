@@ -11,7 +11,8 @@ body {
 
 #cardsContainer {
     display: flex; /* Use flexbox to arrange cards horizontally */
-    justify-content: center; /* Center the cards */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center the cards horizontally */
     margin-bottom: 20px; /* Space between cards and discard pile */
 }
 
@@ -20,8 +21,8 @@ body {
     flex-direction: column; /* Stack content vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    width: 120px; /* Set a fixed width for cards */
-    height: 180px; /* Set a fixed height for cards */
+    width: 70%; /* Set a fixed width for cards */
+    height: auto; /* Set a fixed height for cards */
     margin: 10px;
     background-color: #fff; /* White background */
     border: 2px solid #000; /* Black outline */
@@ -32,7 +33,7 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.05); /* Slightly enlarge card on hover */
+    transform: scale(1.1); /* Slightly enlarge card on hover */
 }
 
 .timer {
