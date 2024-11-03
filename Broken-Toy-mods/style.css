@@ -75,3 +75,11 @@ body {
 #startButton:active {
     transform: scale(0.95); /* Slightly shrink button on click */
 }
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
