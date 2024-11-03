@@ -27,10 +27,10 @@
     transform: scale(0.95); /* Slightly shrink button on click */
 }
 
-.pending {
-    font-size:22px;
-    font-weight:bold;
-    margin:10px;    
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;    
 }
 
 body {
