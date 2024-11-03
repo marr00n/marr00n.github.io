@@ -79,10 +79,9 @@ body {
 }
 
 .timer {
-    margin-bottom: 10px; /* Reduced space between timer and bottom */
+    margin: 10px; /* Reduced space between timer and bottom */
     font-size: 14px;
     color: #333;
-    margin-top: -10px; /* Adjusted negative margin */
 }
 
 .ward {
@@ -134,7 +133,7 @@ html, body {
     }
 
     .timer {
-        margin-bottom: 5px; /* Reduced space */
+        margin: 7px; /* Reduced space */
         font-size: 12px;
     }
 
