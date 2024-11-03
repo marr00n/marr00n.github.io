@@ -24,7 +24,7 @@ body {
     width: 85%; /* Set a fixed width for cards */
     height: auto; /* Set a fixed height for cards */
     margin: 10px;
-    background-color: #fff; /* White background */
+    background-color: beige; /* background */
     border: 2px solid #000; /* Black outline */
     border-radius: 15px; /* Curved corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
@@ -43,6 +43,10 @@ body {
     font-size: 14px;
     color: #333;
     margin-top: -20px
+}
+
+.ward {
+    font-weight: bold;
 }
 
 #discardPile {
