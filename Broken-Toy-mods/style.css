@@ -85,7 +85,12 @@ body {
 }
 
 .ward {
+    margin-top: 10px;
     font-weight: bold;
+}
+
+.task {
+    margin-bottom: 10px;
 }
 
 #discardPile {
@@ -132,6 +137,14 @@ html, body {
         font-size: 14px; /* Smaller font */
     }
 
+    .ward {
+    margin-top: 7px;
+    }
+    
+    .task {
+    margin-bottom: 7px;
+    }
+    
     .timer {
         margin: 7px; /* Reduced space */
         font-size: 12px;
