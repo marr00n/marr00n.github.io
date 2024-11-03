@@ -1,3 +1,38 @@
+#title {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#startButton, #resetButton {
+    display: inline-block; /* Allows padding and margin to work properly */
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 14px; /* Font size */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    margin: 5px;
+}
+
+#startButton:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+#startButton:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+
+.pending {
+    font-size:22px;
+    font-weight:bold;
+    margin:10px;    
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: lightblue;
@@ -5,7 +40,7 @@ body {
 }
 
 .container {
-    margin: 20px auto;
+    margin: 10px auto; /* Reduced margin */
     max-width: 800px; /* Increased width for better card display */
 }
 
@@ -13,7 +48,7 @@ body {
     display: flex; /* Use flexbox to arrange cards horizontally */
     flex-direction: column; /* Stack cards vertically */
     align-items: center; /* Center the cards horizontally */
-    margin-bottom: 20px; /* Space between cards and discard pile */
+    margin-bottom: 10px; /* Reduced space between cards and discard pile */
 }
 
 .card {
@@ -23,7 +58,7 @@ body {
     align-items: center; /* Center content horizontally */
     width: 85%; /* Set a fixed width for cards */
     height: auto; /* Set a fixed height for cards */
-    margin: 10px;
+    margin: 5px; /* Reduced margin */
     background-color: beige; /* background */
     border: 2px solid #000; /* Black outline */
     border-radius: 15px; /* Curved corners */
@@ -39,10 +74,10 @@ body {
 }
 
 .timer {
-    margin-bottom: 20px; /* Space between timer and bottom */
+    margin-bottom: 10px; /* Reduced space between timer and bottom */
     font-size: 14px;
     color: #333;
-    margin-top: -20px
+    margin-top: -10px; /* Adjusted negative margin */
 }
 
 .ward {
@@ -50,30 +85,9 @@ body {
 }
 
 #discardPile {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 10px; /* Reduced margin */
+    margin-bottom: 30px; /* Reduced margin */
     text-align: left; /* Align discard pile text to the left */
-}
-
-#startButton, #resetButton {
-    display: inline-block; /* Allows padding and margin to work properly */
-    padding: 10px 20px; /* Vertical and horizontal padding */
-    font-size: 16px; /* Font size */
-    color: #fff; /* Text color */
-    background-color: #007bff; /* Button background color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
-}
-
-#startButton:hover {
-    background-color: #0056b3; /* Darker background on hover */
-}
-
-#startButton:active {
-    transform: scale(0.95); /* Slightly shrink button on click */
 }
 
 /* Ensure body and html take up full height */
@@ -99,28 +113,28 @@ html, body {
 /* Mobile styling */
 @media (max-width: 600px) {
     .container {
-        margin: 10px auto;
+        margin: 5px auto; /* Reduced margin */
         max-width: 100%;
     }
 
     #cardsContainer {
-        margin-bottom: 10px;
+        margin-bottom: 5px; /* Reduced space */
     }
 
     .card {
         width: 90%;
-        margin: 5px;
+        margin: 3px; /* Reduced margin */
         padding: 5px; /* Reduce padding */
         font-size: 14px; /* Smaller font */
     }
 
     .timer {
-        margin-bottom: 10px;
+        margin-bottom: 5px; /* Reduced space */
         font-size: 12px;
     }
 
     #startButton, #resetButton {
-        padding: 8px 16px;
+        padding: 6px 12px; /* Reduced padding */
         font-size: 14px;
     }
 }
