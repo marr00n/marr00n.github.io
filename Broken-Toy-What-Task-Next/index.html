@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Task Next</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="title">What Task Next?</div>
+        <div id="instructions"> <!-- Instructions Section -->
+            <p><b>Instructions:</b><br/>
+            1. Review the pending tasks displayed and which ward they have originated from.<br/>
+            2. Decide which task should be completed first.<br/>
+            3. To complete a task, click it.<br/>
+            4. A new task will be issued for you to reevaluate the next task to be completed.<br/>
+            5. Remember, in real life, you don't want to keep tasks waiting too long.</p>
+        </div>        
+        <button id="startButton">Start Exercise</button>
+        <div id="cardsContainer"></div>
+        <button id="resetButton" style="display: none;">Reset</button>
+        <div id="discardPile"></div>
+    </div>
+    <script type="module" src="game.js"></script>
+    <div class="footer">
+        <p> Modified from Broken Toy exercises by <a href="https://www.brokentoydotblog.wordpress.com">Dr Simon McCormick</a>.<br/>
+        Released under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>.</p>
+    </div>
+</body>
+</html>
