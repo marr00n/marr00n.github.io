@@ -70,7 +70,9 @@ function startTimer(index) {
     let elapsedTime = 0;
     const timerId = setInterval(() => {
         elapsedTime++;
-        document.getElementById(`timer${index}`).innerText = `${elapsedTime}s`;
+        const minutes = Math.floor(elapsedTime / 60);
+        const seconds = elapsedTime % 60;
+        document.getElementById(`timer${index}`).innerText = `${minutes}m ${seconds}s`;
     }, 1000);
     timers[index] = timerId;
 }
