@@ -70,8 +70,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
     cursor: pointer;
     transition: transform 0.2s; /* Smooth hover effect */
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 .card:hover {
@@ -87,10 +87,6 @@ body {
 .ward {
     margin-top: 10px;
     font-weight: bold;
-}
-
-.task {
-    margin-bottom: 10px;
 }
 
 #discardPile {
@@ -139,10 +135,6 @@ html, body {
 
     .ward {
     margin-top: 7px;
-    }
-    
-    .task {
-    margin-bottom: 7px;
     }
     
     .timer {
