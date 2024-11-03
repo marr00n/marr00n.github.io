@@ -63,7 +63,7 @@ function displayCard(index) {
         // Construct the HTML using the ward and task properties
         const ward = actions[index].ward;
         const task = actions[index].task;
-        card.innerHTML = `<div class="ward">${ward}</div><div class="ward">${task}</div><div class="timer" id="timer${index}">0s</div>`;
+        card.innerHTML = `<div class="ward">${ward}</div><div class="task">${task}</div><div class="timer" id="timer${index}">0s</div>`;
     card.addEventListener('click', () => discardCard(index, card));
     cardContainer.appendChild(card);
     startTimer(index);
