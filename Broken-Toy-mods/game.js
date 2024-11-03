@@ -15,7 +15,7 @@ function startGame() {
     // Reset game state
     drawnCards = [];
     discardPile = [];
-    document.getElementById('cardsContainer').innerHTML = '<div class=\"pending\">Pending tasks</</div><br/><b>Oldest to newest</b>';
+    document.getElementById('cardsContainer').innerHTML = '<h2>Pending tasks</h2><br/><b>Oldest to newest</b>';
     document.getElementById('discardPile').innerHTML = '<br/><hr></br><h2>Completed Tasks</h2>';
 
     // Hide instructions and "Start Exercise" button, show "Reset" button
