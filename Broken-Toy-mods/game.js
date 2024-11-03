@@ -66,6 +66,19 @@ function displayCard(index) {
     startTimer(index);
 }
 
+function displayCard(index) {
+    const cardContainer = document.getElementById('cardsContainer');
+    const card = document.createElement('div');
+    card.className = 'card';
+        // Construct the HTML using the ward and task properties
+        const ward = actions[index].ward;
+        const task = actions[index].task;
+        card.innerHTML = `<div class="ward">${ward}</div><div class="ward">${task}</div><div class="timer" id="timer${index}">0s</div>`;
+    card.addEventListener('click', () => discardCard(index, card));
+    cardContainer.appendChild(card);
+    startTimer(index);
+}
+
 function startTimer(index) {
     let elapsedTime = 0;
     const timerId = setInterval(() => {
@@ -79,9 +92,10 @@ function startTimer(index) {
 
 function discardCard(index, cardElement) {
     clearInterval(timers[index]);
-    discardPile.push(actions[index]);
+    const completedTask = `${actions[index].ward}: ${actions[index].task}`;
+    discardPile.push(completedTask);
     const discardPileElement = document.getElementById('discardPile');
-    discardPileElement.innerHTML += `<p>${actions[index]}</p>`;
+    discardPileElement.innerHTML += `<p>${completedTask}</p>`;
     cardElement.remove();
     if (drawnCards.length < actions.length) {
         drawCards(1);
@@ -89,3 +103,4 @@ function discardCard(index, cardElement) {
         alert("All tasks have been completed!");
     }
 }
+
