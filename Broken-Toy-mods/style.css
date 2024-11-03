@@ -21,7 +21,7 @@ body {
     flex-direction: column; /* Stack content vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    width: 70%; /* Set a fixed width for cards */
+    width: 85%; /* Set a fixed width for cards */
     height: auto; /* Set a fixed height for cards */
     margin: 10px;
     background-color: #fff; /* White background */
@@ -30,6 +30,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
     cursor: pointer;
     transition: transform 0.2s; /* Smooth hover effect */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .card:hover {
