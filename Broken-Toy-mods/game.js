@@ -14,6 +14,11 @@ function startGame() {
     drawCards(5);
 }
 
+document.getElementById("startButton").addEventListener("click", function() {
+    const instructions = document.getElementById("instructions");
+    instructions.style.display = "none"; // Hide the instructions
+});
+
 function drawCards(num) {
     for (let i = 0; i < num; i++) {
         let cardIndex;
