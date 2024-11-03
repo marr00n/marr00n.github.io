@@ -37,7 +37,7 @@ body {
 }
 
 .timer {
-    margin-top: 10px; /* Space between action text and timer */
+    margin-bottom: 20px; /* Space between timer and bottom */
     font-size: 14px;
     color: #333;
 }
